@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'photos.apps.PhotosConfig',
     'rest_framework',
-    'django_filters'
+    'django_filters',
+    'rest_framework_swagger'
 ]
 
 MIDDLEWARE = [
@@ -128,7 +129,13 @@ REST_FRAMEWORK = {
        'rest_framework.filters.SearchFilter',
        'rest_framework.filters.OrderingFilter',
    ),
-    'PAGE_SIZE': 10
+    'PAGE_SIZE': 10,
+    "DEFAULT_AUTHENTICATION_CLASSES":[
+        "rest_framework.authentication.SessionAuthentication",
+        "rest_framework_simplejwt.authentication.JWTAuthentication"
+    ],
+    "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
+
 }
 
 MEDIA_URL = '/media/'
