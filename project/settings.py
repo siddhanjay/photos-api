@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'photos.apps.PhotosConfig',
     'rest_framework',
     'django_filters',
-    'rest_framework_swagger'
 ]
 
 MIDDLEWARE = [
