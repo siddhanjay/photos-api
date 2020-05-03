@@ -27,4 +27,4 @@ API endpoints:
 
 * Obtain JWT token ->  https://siddhanjay.herokuapp.com/token/
 
-* JWt refresh token ->  https://siddhanjay.herokuapp.com/refresh/
+* JWT refresh token ->  https://siddhanjay.herokuapp.com/refresh/
